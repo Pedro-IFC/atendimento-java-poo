@@ -5,7 +5,14 @@ public class Paciente extends Pessoa {
 	private boolean planodeSaude;
 	private boolean preferencial;
 	private String cidadeDeMoradia;
+	private Pessoa responsavel;
 	
+	public Pessoa getResponsavel() {
+		return responsavel;
+	}
+	public void setResponsavel(Pessoa responsavel) {
+		this.responsavel = responsavel;
+	}
 	public boolean isPlanodeSaude() {
 		return planodeSaude;
 	}
