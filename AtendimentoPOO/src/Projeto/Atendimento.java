@@ -1,19 +1,17 @@
 package Projeto;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 
-
-public class Entrada {
-
+public class Atendimento {
+	
 	private LocalDateTime dataHrInicio;
 	private LocalDateTime dataHrFinal;
 	private Paciente paciente;
-	private boolean samu;
+	private Medico medico;
 	
-	public Entrada(LocalDateTime dataHrInicio, Paciente paciente, boolean samu) {
+	public Atendimento(LocalDateTime dataHrInicio, Paciente paciente, Medico medico) {
 		this.setDataHrInicio(dataHrInicio);
+		this.setMedico(medico);
 		this.setPaciente(paciente);
-		this.setSamu(samu);
 	}
 	
 	public LocalDateTime getDataHrInicio() {
@@ -34,24 +32,28 @@ public class Entrada {
 	public void setPaciente(Paciente paciente) {
 		this.paciente = paciente;
 	}
-	public boolean isSamu() {
-		return samu;
+	public Medico getMedico() {
+		return medico;
 	}
-	public void setSamu(boolean samu) {
-		this.samu = samu;
+	public void setMedico(Medico medico) {
+		this.medico = medico;
 	}
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Entrada [dataHrInicio=");
+		builder.append("Atendimento [dataHrInicio=");
 		builder.append(dataHrInicio);
 		builder.append(", dataHrFinal=");
 		builder.append(dataHrFinal);
 		builder.append(", paciente=");
 		builder.append(paciente);
-		builder.append(", samu=");
-		builder.append(samu);
+		builder.append(", medico=");
+		builder.append(medico);
+		builder.append(", toString()=");
+		builder.append(super.toString());
 		builder.append("]");
 		return builder.toString();
 	}
+	
+	
 }
