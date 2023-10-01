@@ -10,13 +10,13 @@ public class Pessoa {
 			return nome;
 		}
 		public void setNome(String nome) {
-			nome = nome;
+			this.nome = nome;
 		}
 		public Date getDataNascimento() {
 			return dataNascimento;
 		}
 		public void setDataNascimento(Date dataNascimento) {
-			dataNascimento = dataNascimento;			
+			this.dataNascimento = dataNascimento;			
 		}
 		@Override
 		public String toString() {

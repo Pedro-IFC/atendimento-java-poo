@@ -5,12 +5,10 @@ import java.text.SimpleDateFormat;
 public class ProgramaMain {
 
 	public static void main(String[] args) throws ParseException {
+	
 
-		Entrada e = new Entrada();
-		
-		
-		Especialidade esp = new Especialidade("Podologo");		
-		
+		Especialidade esp = new Especialidade("Podologo");	
+		System.out.println(esp);
 		
 		Medico m = new Medico();
 		m.setNome("Jaiminho");
